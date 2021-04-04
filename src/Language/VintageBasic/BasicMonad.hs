@@ -255,7 +255,7 @@ secondsSinceMidnight = do
 
 -- | Seeds the BASIC random number generator using an integer.
 seedRandom :: Int -> Code ()
-seedRandom i = modify (\state -> state { randomGen = (mkStdGen i) })
+seedRandom i = modify (\state -> state { randomGen = (mkStdGen 1) })
 
 -- | Seeds the BASIC random number generator based on the number of
 -- seconds since midnight.
